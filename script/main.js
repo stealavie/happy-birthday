@@ -108,7 +108,7 @@ const animationTimeline = () => {
     })
     .staggerTo(
       ".hbd-chatbox span",
-      0.5,
+      1,
       {
         visibility: "visible"
       },
@@ -119,7 +119,7 @@ const animationTimeline = () => {
     })
     .to(
       ".four",
-      0.5,
+      1,
       {
         scale: 0.2,
         opacity: 0,
@@ -143,7 +143,7 @@ const animationTimeline = () => {
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
     .from(
       ".idea-5",
-      0.7,
+      1.5,
       {
         rotationX: 15,
         rotationZ: -10,
@@ -156,7 +156,7 @@ const animationTimeline = () => {
     )
     .to(
       ".idea-5 .smiley",
-      0.7,
+      1.5,
       {
         rotation: 90,
         x: 8
@@ -165,7 +165,7 @@ const animationTimeline = () => {
     )
     .to(
       ".idea-5",
-      0.7,
+      1.5,
       {
         scale: 0.2,
         opacity: 0
@@ -174,25 +174,25 @@ const animationTimeline = () => {
     )
     .staggerFrom(
       ".idea-6 span",
-      0.8,
+      1.5,
       {
         scale: 3,
         opacity: 0,
         rotation: 15,
         ease: Expo.easeOut
       },
-      0.2
+      0.7
     )
     .staggerTo(
       ".idea-6 span",
-      0.8,
+      1.5,
       {
         scale: 3,
         opacity: 0,
         rotation: -15,
         ease: Expo.easeOut
       },
-      0.2,
+      0.8,
       "+=1"
     )
     .staggerFromTo(
@@ -220,15 +220,15 @@ const animationTimeline = () => {
       },
       "-=2"
     )
-    .from(".hat", 0.5, {
-      x: -100,
+    .from(".hat", 1, { // Increased duration from 0.5 to 1
+      x: -150,
       y: 350,
       rotation: -180,
       opacity: 0
     })
     .staggerFrom(
       ".wish-hbd span",
-      0.7,
+      1, // Increased duration from 0.7 to 1.4
       {
         opacity: 0,
         y: -50,
@@ -237,11 +237,11 @@ const animationTimeline = () => {
         skewX: "30deg",
         ease: Elastic.easeOut.config(1, 0.5)
       },
-      0.1
+      0.2 // Increased stagger delay from 0.1 to 0.2
     )
     .staggerFromTo(
       ".wish-hbd span",
-      0.7,
+      1, // Increased duration from 0.7 to 1.4
       {
         scale: 1.4,
         rotationY: 150
@@ -257,7 +257,7 @@ const animationTimeline = () => {
     )
     .from(
       ".wish h5",
-      0.5,
+      1,
       {
         opacity: 0,
         y: 10,
@@ -275,7 +275,7 @@ const animationTimeline = () => {
         repeat: 3,
         repeatDelay: 1.4
       },
-      0.3
+      1
     )
     .to(".six", 0.5, {
       opacity: 0,
@@ -285,7 +285,7 @@ const animationTimeline = () => {
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
-      0.5,
+      1.5,
       {
         rotation: 90
       },
